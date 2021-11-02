@@ -1,0 +1,58 @@
+### delete all artists
+DELETE http://localhost:3000/api/artists HTTP/1.1
+
+### GET one artist
+GET http://localhost:3000/api/artists/Mozart HTTP/1.1
+
+### GET all artist
+GET http://localhost:3000/api/artists HTTP/1.1
+
+### update artist
+PATCH http://localhost:3000/api/artists/Mozart HTTP/1.1
+Content-Type: application/json
+
+{
+    "Country": "Austria"
+}
+
+###
+POST http://localhost:3000/api/artists HTTP/1.1
+Content-Type: application/json
+
+[
+{
+    "name": "Mozart",
+    "type": "composer",
+    "born": "1756",
+    "died": "1791",
+    "greatest piece": "The Magic Flute"
+},
+{
+    "name": "Picasso",
+    "type": "painter",
+    "born": "1881",
+    "died": "1973",
+    "greatest piece": "La Vie"
+},
+{
+    "name": "Michelangelo",
+    "type": "sculptor",
+    "born": "1475",
+    "died": "1564",
+    "greatest piece": "David"
+},
+{
+    "name": "Elvis",
+    "type": "singer",
+    "born": "1935",
+    "died": "1977",
+    "greatest piece": "Jailhouse Rock"
+},
+{
+    "name": "Chopin",
+    "type": "pianist",
+    "born": "1810",
+    "died": "1849",
+    "greatest piece": "Nocturnes, Op. 9"
+}]
+
